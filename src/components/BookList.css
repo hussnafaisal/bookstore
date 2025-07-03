@@ -1,0 +1,31 @@
+.book-list {
+  text-align: center;
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+  margin-top: 40px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.book-list.error {
+  color: #e75480;
+}
+
+.book-list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 18px;
+  align-items: stretch;
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px 10px;
+  box-shadow: 0 2px 16px rgba(37, 99, 235, 0.06);
+}
+
+@media (max-width: 700px) {
+  .book-list-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 18px 8px;
+    padding: 12px 2px;
+  }
+}

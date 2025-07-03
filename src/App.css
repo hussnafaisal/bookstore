@@ -1,3 +1,38 @@
+:root {
+  --primary-blue: #b48bf2;
+  --accent-yellow: #2d2172;
+  --background: #f3f6fa;
+  --background-light: #e9eafc;
+  --card-bg: #fff;
+  --card-border: #e5e7eb;
+  --text-main: #2d2172;
+  --text-muted: #888;
+  --input-bg: #f3f6fa;
+  --input-border: #e5e7eb;
+  --input-focus: #b48bf2;
+  --shadow: 0 8px 40px rgba(37, 99, 235, 0.13);
+  --shadow-btn: 0 2px 8px rgba(37, 99, 235, 0.10);
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +69,40 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f6fa 0%, #fff 100%);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 24px 24px 24px;
+}
+
+.book-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px 30px;
+  margin-top: 12px;
+}
+
+.book-list {
+  text-align: center;
+  color: #555;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 16px 4px 8px 4px;
+  }
+  .book-list-grid {
+    gap: 16px 8px;
   }
 }

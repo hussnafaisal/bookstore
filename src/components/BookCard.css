@@ -1,0 +1,131 @@
+.book-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(37, 99, 235, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px 18px 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  min-width: 210px;
+  max-width: 260px;
+  margin: 0 auto;
+  border: 1.5px solid #f3f6fa;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+.book-card:hover {
+  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.13);
+  transform: translateY(-4px) scale(1.03);
+  border-color: var(--accent-yellow);
+}
+
+.book-image {
+  width: 140px;
+  height: 210px;
+  object-fit:contain;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 8px rgba(37, 99, 235, 0.06);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.book-image:hover {
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.13);
+  transform: scale(1.04);
+}
+
+.book-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  flex: 1 1 auto;
+}
+
+.book-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent-yellow);
+  line-height: 1.1;
+  font-family: inherit;
+  min-height: 2.6em;
+  text-align: center;
+}
+
+.book-authors {
+  font-size: 0.8rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  font-family: inherit;
+  margin-top: 0;
+  text-align: center;
+}
+
+.book-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  gap: 10px;
+  padding: 0 2px;
+}
+
+.book-price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent-yellow);
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  font-family: inherit;
+  box-shadow: none;
+}
+
+.add-cart-btn {
+  background: var(--primary-blue);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.10);
+}
+
+.add-cart-btn:hover {
+  background: var(--accent-yellow);
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .book-card {
+    min-width: 140px;
+    max-width: 100%;
+    padding: 12px 4px 10px 4px;
+  }
+  .book-image {
+    width: 90px;
+    height: 130px;
+  }
+  .book-title {
+    font-size: 1.02rem;
+  }
+  .book-authors {
+    font-size: 0.92rem;
+  }
+  .book-price {
+    font-size: 0.98rem;
+    padding: 3px 8px;
+  }
+} 

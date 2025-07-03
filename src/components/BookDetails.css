@@ -1,0 +1,126 @@
+.details-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(44, 44, 84, 0.38);
+  z-index: 2000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width:100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.details-modal {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 48px 24px 32px 24px;
+  min-width: 0;
+  max-width: 700px;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--primary-blue);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.details-image {
+  width: 160px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: #f3f6fa;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 8px rgba(37, 99, 235, 0.06);
+}
+
+.details-title {
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  font-family: inherit;
+}
+
+.details-authors {
+  color: var(--primary-blue);
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.details-meta {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: inherit;
+}
+
+.details-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.details-rating-num {
+  color: #facc15;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+.details-description {
+  color: #444;
+  font-size: 1.05rem;
+  margin-top: 14px;
+  text-align: left;
+  background: #f3f6fa;
+  border-radius: 14px;
+  padding: 16px;
+  font-family: inherit;
+}
+
+@media (max-width: 700px) {
+  .details-modal {
+    padding: 18px 4px 12px 4px;
+    width: 100vw;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+  .details-close-btn {
+    top: 12px;
+    right: 12px;
+    font-size: 1.5rem;
+  }
+  .details-title {
+    font-size: 1.1rem;
+  }
+  .details-authors {
+    font-size: 0.98rem;
+  }
+  .details-description {
+    font-size: 0.98rem;
+    padding: 8px;
+  }
+} 
