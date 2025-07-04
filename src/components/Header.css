@@ -74,7 +74,9 @@
   color: #b48bf2;
   transition: background 0.2s, color 0.2s;
 }
-
+.header-login{
+  text-align: center;
+}
 .header-login:hover {
   background: #b48bf2;
   color: #fff;
@@ -83,6 +85,7 @@
 .header-signup {
   background: #b48bf2;
   color: #f3f6fa;
+  text-align: center;
   margin-left: 2px;
 }
 
@@ -147,6 +150,7 @@
   .logo {
     font-size: 1.2rem;
     text-align: center;
+    margin-left:-10px;
     width: 100vw;
   }
   .header-actions {
