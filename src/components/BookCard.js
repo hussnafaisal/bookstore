@@ -3,6 +3,7 @@ import { BookContext } from '../context/BookContext';
 import { FiPlus } from 'react-icons/fi';
 import './BookCard.css';
 
+
 const BookCard = ({ book }) => {
   const { setSelectedBook, cart, setCart } = useContext(BookContext);
   const { volumeInfo, saleInfo } = book;
