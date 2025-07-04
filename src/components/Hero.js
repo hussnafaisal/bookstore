@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.css';
 
-const Hero = () => {
+const Hero = ({ onSearch }) => {
+  const [input, setInput] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (onSearch) onSearch(input);
+  };
   return (
     <section className="hero">
       <div className="hero-content">
@@ -11,8 +16,13 @@ const Hero = () => {
         <p className="hero-desc">
           A house to millions of digital and non-digital books from around the world
         </p>
-        <form className="hero-search">
-          <input className="hero-search-input" placeholder="Write Title Here" />
+        <form className="hero-search" onSubmit={handleSubmit}>
+          <input
+            className="hero-search-input"
+            placeholder="Write Title Here"
+            value={input}
+            onChange={e => setInput(e.target.value)}
+          />
           <button className="hero-search-btn" type="submit">Search</button>
           <select className="hero-search-dropdown">
             <option>The Author</option>

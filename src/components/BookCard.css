@@ -110,13 +110,38 @@
 
 @media (max-width: 700px) {
   .book-card {
-    min-width: 140px;
-    max-width: 100%;
-    padding: 12px 4px 10px 4px;
+    min-width: 0;
+    max-width: 80vw;
+    /* padding: 80px; */
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 30px 30px;
+    padding: 12px 0 10px 0;
   }
   .book-image {
-    width: 90px;
-    height: 130px;
+    width: 90vw;
+    max-width: 120px;
+    min-width: 80px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .book-info {
+    width: 100vw;
+    max-width: 80vw;
+    box-sizing: border-box;
+    padding: 0 8px;
+  }
+  .book-bottom {
+    width: 100vw;
+    max-width: 80vw;
+    box-sizing: border-box;
+    padding: 0 8px;
+  }
+  .add-cart-btn {
+    min-width: 38px;
+    min-height: 38px;
   }
   .book-title {
     font-size: 1.02rem;

@@ -1,14 +1,20 @@
 import React from 'react';
 import { FiMail, FiLock, FiUser } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const SignUp = () => {
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you would handle signup logic
+    navigate('/');
+  };
   return (
     <div className="auth-bg">
       <div className="auth-card">
         <h2 className="auth-title">Sign Up</h2>
-        <form className="auth-form">
+        <form className="auth-form" onSubmit={handleSubmit}>
           <div className="auth-input-group">
             <FiUser className="auth-input-icon" />
             <input className="auth-input" type="text" placeholder="Name" required />

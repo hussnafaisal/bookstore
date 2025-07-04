@@ -27,7 +27,7 @@ function App() {
               <Route path="/forget-password" element={<ForgetPassword />} />
               <Route path="/" element={
                 <>
-                  <Hero />
+                  <Hero onSearch={setSearch} />
                   <BookList searchQuery={search} />
                   <BookDetails />
                   <Cart />
