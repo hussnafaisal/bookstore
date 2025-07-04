@@ -118,10 +118,11 @@
 }
 @media (max-width: 600px) {
   .auth-bg {
-    padding: 10px 0;
+    padding: 10px 20px;
+
   }
   .auth-card {
-    padding: 18px 4px 12px 4px;
+    padding: 18px 20px 12px 20px;
     min-width: 0;
     max-width: 98vw;
     width: 100%;

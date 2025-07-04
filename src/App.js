@@ -10,7 +10,7 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import ForgetPassword from './components/ForgetPassword';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function App() {
